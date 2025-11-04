@@ -19,7 +19,7 @@ const Footer = () => {
 
             {/* <span className="hidden md:inline">•</span> */}
           </div>
-{/* ... */}
+          {/* ... */}
           <p className="text-sm text-muted-foreground/80">
             Crafting web experiences with passion and precision.
           </p>

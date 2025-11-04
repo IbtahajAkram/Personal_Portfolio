@@ -8,6 +8,12 @@ export const personalInfo = {
   twitter: "https://github.com/IbtahajAkram"
 }
 
+import cook from "../assets/cook.png"
+import athletehub from "../assets/athletehub.png"
+import socialmeet from "../assets/socialmeetOverview.jpeg"
+import postwriter from "../assets/contentwriter.jpeg"
+import socialMeetVideo from "../assets/project-socialy-meet.mp4"
+import athleteHubVideo from "../assets/project-athelete-hub.webm"
 export const skills = {
   frontend: [
     { name: "HTML", icon: "Code" },
@@ -38,60 +44,101 @@ export const skills = {
 
 export const projects = [
   {
-    id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL featuring user authentication, payment integration, and admin dashboard.",
-    image: "/api/placeholder/600/400",
-    techStack: ["React.js", "Node.js", "PostgreSQL", "TailwindCSS", "Stripe"],
-    liveDemo: "https://ecommerce-demo.vercel.app",
-    github: "https://github.com/zawwarakram/ecommerce-platform"
+    id: 6,
+    title: "Socialy Meet – Full-Stack Social Media Platform",
+    description:
+      "A complete social media experience built from scratch, similar to Facebook. Includes post creation, editing, deletion, likes, comments, and sharing. Users can manage profiles, send and accept friend requests, follow others, get instant notifications, and interact in a vibrant online community.",
+    image: socialmeet,
+    video: socialMeetVideo,
+    techStack: [
+      "React.js",
+      "TailwindCSS",
+      "WebSockets",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Neon",
+      "Cloudinary",
+    ],
+    liveDemo: "https://socialy-meets.vercel.app",
+    github: "#",
   },
   {
+    id: 1,
+    title: "Cooking Recipe Maestro – Smart Recipe Explorer",
+    description:
+      "A modern web app that helps users discover, create, and save delicious recipes with ease. Explore dishes by ingredients, cuisine, or dietary preferences — making cooking more fun and organized.",
+    image: cook,
+    techStack: ["React.js","vite", "TailwindCSS", "Shadcn","Motion"],
+    liveDemo: "https://zawwar-cooking-recipe-mastero.vercel.app",
+    github: "#",
+  },
+  {
+  id: 7,
+  title: "AthleteHub – Sports Management Dashboard",
+  description:
+    "A modern admin dashboard for managing athletes, coaches, groups, and performance analytics. Built with React, TailwindCSS, and Recharts, AthleteHub provides real-time stats, visual insights, and subscription management with a clean UI.",
+  image: athletehub, // import your project screenshot here
+  video: athleteHubVideo,
+  techStack: ["React.js", "TailwindCSS", "TypeScript", "Recharts", "Shadcn", "Motion"],
+  liveDemo: "#",
+  github: "#",
+},
+
+  {
     id: 2,
-    title: "Task Management App",
-    description: "Collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.",
-    image: "/api/placeholder/600/400",
-    techStack: ["Next.js", "TypeScript", "MongoDB", "Socket.io", "Clerk"],
-    liveDemo: "https://taskapp-demo.vercel.app",
-    github: "https://github.com/zawwarakram/task-manager"
+    title: "AI Content Writer – Intelligent Writing Assistant",
+    description:
+      "An advanced AI-powered tool that generates high-quality blogs, articles, and social media posts in seconds — helping users write faster, smarter, and more creatively.",
+    image: postwriter,
+    techStack: ["React.js","Vite", "TypeScript", "TailwindCSS", "Shadcn","Motion"],
+    liveDemo: "https://ai-content-writer-orpin.vercel.app/",
+    github: "#",
   },
   {
     id: 3,
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for social media management with data visualization, scheduling features, and multi-platform integration.",
+    title: "AI ChatBot – Smart Conversational Assistant",
+    description:
+      "A full-stack AI chatbot that delivers natural, human-like conversations. Designed for customer support and task automation with real-time responses and contextual understanding.",
     image: "/api/placeholder/600/400",
     techStack: ["React.js", "Express.js", "PostgreSQL", "Chart.js", "Docker"],
     liveDemo: "https://social-dashboard-demo.vercel.app",
-    github: "https://github.com/zawwarakram/social-dashboard"
+    github: "https://github.com/zawwarakram/social-dashboard",
   },
   {
     id: 4,
-    title: "Learning Management System",
-    description: "Educational platform with course management, progress tracking, video streaming, and interactive quizzes for students and instructors.",
+    title: "AI Voice Translator – Real-Time Speech Conversion",
+    description:
+      "An intelligent voice translation platform that converts spoken language into multiple languages in real time — perfect for travel, learning, and global communication.",
     image: "/api/placeholder/600/400",
     techStack: ["Next.js", "Node.js", "MongoDB", "AWS S3", "Stripe"],
     liveDemo: "https://lms-demo.vercel.app",
-    github: "https://github.com/zawwarakram/learning-management"
+    github: "https://github.com/zawwarakram/learning-management",
   },
   {
     id: 5,
-    title: "Weather Forecast App",
-    description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics using OpenWeatherMap API.",
+    title: "AI Voice to Text – Speech",
+    description:
+      "A powerful app that transcribes voice input into accurate text instantly. Built for accessibility, productivity, and seamless integration into modern workflows.",
     image: "/api/placeholder/600/400",
     techStack: ["React.js", "TailwindCSS", "OpenWeather API", "Mapbox"],
     liveDemo: "https://weather-app-demo.vercel.app",
-    github: "https://github.com/zawwarakram/weather-forecast"
+    github: "https://github.com/zawwarakram/weather-forecast",
   },
   {
-    id: 6,
-    title: "Portfolio Website",
-    description: "Responsive portfolio website built with modern web technologies, featuring glassmorphism design, smooth animations, and optimized performance.",
+    id: 8,
+    title: "Tech Blogs – Modern Blogging Platform",
+    description:
+      "✨ A sleek, responsive, and SEO-optimized tech blogging platform where users can explore insightful articles, tutorials, and trends in modern web development. Built with React.js and TailwindCSS, it delivers lightning-fast performance and an elegant reading experience.",
     image: "/api/placeholder/600/400",
-    techStack: ["React.js", "TailwindCSS", "Framer Motion", "Vite"],
-    liveDemo: "https://zawwarakram.vercel.app",
-    github: "https://github.com/zawwarakram/portfolio"
-  }
-]
+    techStack: ["React.js", "TailwindCSS", "OpenWeather API", "Mapbox"],
+    liveDemo: "https://weather-app-demo.vercel.app",
+    github: "https://github.com/zawwarakram/weather-forecast",
+  },
+];
+
 
 export const experience = [
   {

@@ -14,6 +14,16 @@ import socialmeet from "../assets/socialmeetOverview.jpeg"
 import postwriter from "../assets/contentwriter.jpeg"
 import socialMeetVideo from "../assets/project-socialy-meet.mp4"
 import athleteHubVideo from "../assets/project-athelete-hub.webm"
+import aiChatbot from "../assets/ai-chatbot.png"
+import projectAiChatbotVideo from "../assets/project-ai-chatbot.webm"
+import aiContentWriterVideo from "../assets/project-ai-content-writter.webm"
+import aiVoiceTranslationImage from "../assets/project-ai-voice-translation.png"
+import aiVoiceTranslationVideo from "../assets/project-ai-voice-translation.webm"
+import cateringVideo from "../assets/project-caterng-website.webm"
+import cateringImage from "../assets/project-catering-website.png"  
+import weddingHallVideo from "../assets/project-wedding-halls.webm"
+import weddingHallImage from "../assets/project-wedding-halls.png"
+
 export const skills = {
   frontend: [
     { name: "HTML", icon: "Code" },
@@ -86,14 +96,14 @@ export const projects = [
   liveDemo: "#",
   github: "#",
 },
-
   {
     id: 2,
     title: "AI Content Writer – Intelligent Writing Assistant",
     description:
       "An advanced AI-powered tool that generates high-quality blogs, articles, and social media posts in seconds — helping users write faster, smarter, and more creatively.",
     image: postwriter,
-    techStack: ["React.js","Vite", "TypeScript", "TailwindCSS", "Shadcn","Motion"],
+    video: aiContentWriterVideo,
+    techStack: ["React.js","Vite", "TypeScript","ai","Gemini", "TailwindCSS", "Shadcn","Motion"],
     liveDemo: "https://ai-content-writer-orpin.vercel.app/",
     github: "#",
   },
@@ -102,7 +112,8 @@ export const projects = [
     title: "AI ChatBot – Smart Conversational Assistant",
     description:
       "A full-stack AI chatbot that delivers natural, human-like conversations. Designed for customer support and task automation with real-time responses and contextual understanding.",
-    image: "/api/placeholder/600/400",
+    image: aiChatbot,
+    video: projectAiChatbotVideo,
     techStack: ["React.js", "Express.js", "PostgreSQL", "Chart.js", "Docker"],
     liveDemo: "https://social-dashboard-demo.vercel.app",
     github: "https://github.com/zawwarakram/social-dashboard",
@@ -112,31 +123,54 @@ export const projects = [
     title: "AI Voice Translator – Real-Time Speech Conversion",
     description:
       "An intelligent voice translation platform that converts spoken language into multiple languages in real time — perfect for travel, learning, and global communication.",
-    image: "/api/placeholder/600/400",
-    techStack: ["Next.js", "Node.js", "MongoDB", "AWS S3", "Stripe"],
-    liveDemo: "https://lms-demo.vercel.app",
-    github: "https://github.com/zawwarakram/learning-management",
-  },
-  {
-    id: 5,
-    title: "AI Voice to Text – Speech",
-    description:
-      "A powerful app that transcribes voice input into accurate text instantly. Built for accessibility, productivity, and seamless integration into modern workflows.",
-    image: "/api/placeholder/600/400",
-    techStack: ["React.js", "TailwindCSS", "OpenWeather API", "Mapbox"],
-    liveDemo: "https://weather-app-demo.vercel.app",
-    github: "https://github.com/zawwarakram/weather-forecast",
-  },
-  {
-    id: 8,
-    title: "Tech Blogs – Modern Blogging Platform",
-    description:
-      "✨ A sleek, responsive, and SEO-optimized tech blogging platform where users can explore insightful articles, tutorials, and trends in modern web development. Built with React.js and TailwindCSS, it delivers lightning-fast performance and an elegant reading experience.",
-    image: "/api/placeholder/600/400",
-    techStack: ["React.js", "TailwindCSS", "OpenWeather API", "Mapbox"],
-    liveDemo: "https://weather-app-demo.vercel.app",
-    github: "https://github.com/zawwarakram/weather-forecast",
-  },
+    image: aiVoiceTranslationImage,
+    video: aiVoiceTranslationVideo,
+    techStack: ["React.js", "Node.js","ExpressJS", "AI", "WebRTC", "TailwindCSS"],
+    // liveDemo: "#",
+    // github: "#",
+  },{
+  id: 4,
+  title: "Catering Management System – Smart Event Catering Platform",
+  description:
+    "A full-featured catering management platform that allows customers to browse menus, book catering services for events.",
+  image: cateringImage, // import karo apni catering image yahan
+  video: cateringVideo, // optional: demo video link ya local import
+  techStack: ["React.js", "Vite.js", "Tailwindcss", "Motion"],
+  liveDemo: "https://catering-service-dusky.vercel.app/",
+  // github: "https://github.com/yourusername/catering-management-system",
+},
+{
+  id: 5,
+  title: "Wedding Halls Management System – Smart Venue Booking Platform",
+  description:
+    "A modern web platform for managing wedding halls and event venues. Users can explore available halls, check availability, and make online bookings.",
+  image: weddingHallImage, // import your image here
+  video: weddingHallVideo, // optional: add your demo video if available
+  techStack: ["React.js", "vite.js", "Motion", "Typescript", "TailwindCSS"],
+  liveDemo: "https://wedding-halls-nu.vercel.app/",
+  // github: "https://github.com/yourusername/wedding-hall-management-system",
+},
+
+  // {
+  //   id: 5,
+  //   title: "AI Voice to Text – Speech",
+  //   description:
+  //     "A powerful app that transcribes voice input into accurate text instantly. Built for accessibility, productivity, and seamless integration into modern workflows.",
+  //   image: "/api/placeholder/600/400",
+  //   techStack: ["React.js", "TailwindCSS", "OpenWeather API", "Mapbox"],
+  //   liveDemo: "https://weather-app-demo.vercel.app",
+  //   github: "https://github.com/zawwarakram/weather-forecast",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Tech Blogs – Modern Blogging Platform",
+  //   description:
+  //     "✨ A sleek, responsive, and SEO-optimized tech blogging platform where users can explore insightful articles, tutorials, and trends in modern web development. Built with React.js and TailwindCSS, it delivers lightning-fast performance and an elegant reading experience.",
+  //   image: "/api/placeholder/600/400",
+  //   techStack: ["React.js", "TailwindCSS", "OpenWeather API", "Mapbox"],
+  //   liveDemo: "https://weather-app-demo.vercel.app",
+  //   github: "https://github.com/zawwarakram/weather-forecast",
+  // },
 ];
 
 

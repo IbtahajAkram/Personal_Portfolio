@@ -33,13 +33,13 @@ const Navigation = () => {
   }
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'glass-card py-2' : 'py-4'
+    <nav className={`fixed top-0 left-0 right-0 h-[75px]  z-50 transition-all duration-300 ${
+      scrolled ? 'glass-card ' : 'py-0'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <div className="gradient-text text-2xl font-bold">
-            MZA
+          <div className="gradient-text mt-4 text-2xl font-bold">
+            MZA 
           </div>
 
           {/* Desktop Navigation */}
@@ -48,7 +48,7 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="animated-underline hover:text-primary transition-colors"
+                className="animated-underline mt-6 hover:text-primary  transition-colors"
               >
                 {item.label}
               </button>
